@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Inicio de sesión exitoso",
+    "credentials": {
+      "username": "usuarioValido",
+      "password": "pwd"
+    },
+    "expectedError": null
+  },
+  {
+    "description": "Inicio de sesión fallido - Usuario incorrecto",
+    "credentials": {
+      "username": "usuarioInvalido",
+      "password": "contraseñaValida"
+    },
+"expectedError": "Invalid username/password"
+  },
+  {
+    "description": "Inicio de sesión fallido - Contraseña incorrecta",
+    "credentials": {
+      "username": "usuarioValido",
+      "password": "contraseñaInvalida"
+    },
+    "expectedError": "Invalid username/password"
+  }
+]
